@@ -10,10 +10,17 @@ A simple test to embed the [Gismo](https://gismo.github.io/index.html) library i
 ## Dependencies
 - [CMake](https://cmake.org) (tested with 3.11.0)
 
-obtained with:
+obtained with (on Ubuntu):
 ```
 sudo apt install cmake
 ```
+
+or (on Arch):
+```
+sudo pacman -S cmake
+```
+
+# Other dependencies built with CMake
 - [Google Test](https://github.com/google/googletest) (tested with 1.8.0) - Imported with CMake
 - [PLF Nanotimer](https://github.com/mattreecebentley/plf_nanotimer) (tested with commit 8c42255) - Imported with CMake
 
