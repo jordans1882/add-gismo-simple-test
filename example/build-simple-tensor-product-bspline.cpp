@@ -12,6 +12,7 @@ const double PI = 3.14159265;
 
 int main() {
 
+  std::cout << "Hello\n";
   index_t n = 5;
   index_t m = 5;
   index_t degree = 3;
@@ -37,7 +38,7 @@ int main() {
   gsTensorBSplineBasis<2, real_t> basis(kv1, kv2);
   
   // 3. construction of a coefficients
-  gsMatrix<> greville = basis.anchors();  // <- issues with this line!
+  gsMatrix<index_t> greville = basis.anchors();  // <- issues with this line!
 
   // does the following:
   // anchors() gets inheritied from gsBasis which:

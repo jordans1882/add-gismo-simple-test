@@ -65,7 +65,14 @@ install_dependency("googletest")
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE) # fix settings on Windows (TODO: detect OS?)
 
 # setup the build flags
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O2")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O2")
+include( gsConfig )
+# include( CheckCCompilerFlag )
+# include( CheckCXXCompilerFlag )
+# include( CheckMicCXXCompilerFlag )
+# include( CheckMicCCompilerFlag )
+# include( AddCompilerFlag )
+# include( OptimizeForArchitecture )
 
 # setup the includes
 set(SIMPLE_INCLUDE_DIR "./include")
